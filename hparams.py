@@ -1,4 +1,4 @@
-import tensorflow as tf
+#import tensorflow as tf
 from text import symbols
 
 
@@ -93,10 +93,10 @@ def create_hparams(hparams_string=None, verbose=False):
     )
 
     if hparams_string:
-        tf.compat.v1.logging.info('Parsing command line hparams: %s', hparams_string)
+        #tf.compat.v1.logging.info('Parsing command line hparams: %s', hparams_string)
         hparams.parse(hparams_string)
 
-    if verbose:
-        tf.compat.v1.logging.info('Final parsed hparams: %s', hparams.values())
+    #if verbose:
+        #tf.compat.v1.logging.info('Final parsed hparams: %s', hparams.values())
 
     return hparams
